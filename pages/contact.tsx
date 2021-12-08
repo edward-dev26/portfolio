@@ -19,7 +19,7 @@ const Contact: NextPage = () => {
         <title>{getTitle('Contact')}</title>
       </Head>
       <Title
-        text="Interested in working with me? get in touch"
+        text="Interested in working with me? Get in touch"
         highlight="working"
         className={styles.title}
       />

@@ -75,7 +75,7 @@ const Project: NextPage<PropsType> = ({ project, nextProject }) => {
       </div>
       <div className={styles.content}>
         <div className={styles.gallery}>
-          <Gallery images={[project.image, project.image]} />
+          <Gallery images={[project.image]} />
         </div>
         <div className={styles.description}>
           <div className={styles.overview}>
