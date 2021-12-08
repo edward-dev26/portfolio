@@ -48,8 +48,8 @@ const About: NextPage<PropsType> = ({ skills }) => {
               specialization it’s React library with its infrastructure.I
               provide such services as Website development from scratch,
               Finalizations of sites, Templating, Mobile optimization. For more
-              than 2 years I've been working on big projects for clients from
-              all over the world.
+              than 2 years I&apos;ve been working on big projects for clients
+              from all over the world.
             </p>
             <p>
               I prefer a healthy lifestyle like gym workout, jogging, biking and
