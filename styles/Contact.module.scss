@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+.contact {
+  padding-top: 100px;
+
+  .form {
+    margin-bottom: 100px;
+  }
+
+  .title {
+    max-width: 600px;
+  }
+
+  .content {
+    display: flex;
+    margin-bottom: 120px;
+  }
+
+  .image {
+    flex: 1;
+    padding-right: 15px;
+  }
+
+  .info {
+    flex: 0 1 33.3%;
+    padding-left: 15px;
+
+    &__section {
+      margin-bottom: 23px;
+
+      h4 {
+        margin: 0 0 7px;
+        font-weight: 500;
+        font-size: 19px;
+      }
+
+      p {
+        margin: 0;
+        color: $dark-gray;
+        font-size: 15px;
+        line-height: 21px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 70px;
+
+    .content {
+      margin-bottom: 60px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .content {
+      flex-direction: column;
+
+      .image,
+      .info {
+        padding: 0;
+      }
+
+      .image {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

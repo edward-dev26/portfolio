@@ -1,0 +1,30 @@
+.form {
+  .row {
+    display: flex;
+
+    @media (min-width: 769px) {
+      .row__input {
+        margin: 0;
+        flex: 1;
+
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+
+  .button {
+    margin-top: 50px;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+
+    .button {
+      margin-top: 30px;
+    }
+  }
+}

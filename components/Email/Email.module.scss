@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.email {
+  margin-top: 110px;
+  margin-bottom: 140px;
+  text-align: center;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light-dark;
+    font-size: 130px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  a {
+    color: $white;
+    font-size: 50px;
+    font-weight: 300;
+    position: relative;
+    z-index: 100;
+  }
+
+  @media (max-width: 1024px) {
+    &__bg {
+      font-size: 9vw;
+    }
+
+    a {
+      font-size: 25px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+}

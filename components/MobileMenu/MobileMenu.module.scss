@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss';
+
+.mobileMenu {
+  display: none;
+
+  .menu {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    background-color: $light-dark-bg;
+    padding: 20px 0;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+
+    li {
+      opacity: 0;
+      transition: all 0.9s ease-out;
+    }
+
+    &_active {
+      opacity: 1;
+      visibility: visible;
+
+      li {
+        opacity: 1;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 9px 25px;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    .active {
+      a {
+        color: $turquoise;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}

@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+.skills {
+  .skill {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+  }
+
+  .progress {
+    height: 3px;
+    background-color: $gray-bg;
+  }
+
+  .progressBar {
+    background-color: $white;
+    height: 3px;
+    width: 10px;
+    transition: width 2s ease-in-out;
+  }
+
+  .percentage {
+    font-size: 12px;
+    line-height: 3px;
+    font-weight: 500;
+    position: absolute;
+    top: 13px;
+  }
+}

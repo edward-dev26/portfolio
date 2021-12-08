@@ -1,0 +1,73 @@
+@import '../../styles/variables.scss';
+
+.header {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .logo {
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+
+  .navbar {
+    display: none;
+    list-style: none;
+
+    @media (min-width: 769px) {
+      display: flex;
+    }
+
+    li {
+      &:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+
+      &.active {
+        a {
+          &:after {
+            left: 0px;
+            opacity: 1;
+          }
+        }
+      }
+
+      a {
+        display: block;
+        padding: 1rem 0;
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+          content: '';
+          width: 15px;
+          height: 2px;
+          background-color: $turquoise;
+          position: absolute;
+          bottom: 0;
+          left: -15px;
+          opacity: 0;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+        }
+
+        &:hover {
+          &:after {
+            left: 0px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: $header-height-mobile;
+
+    .logo {
+      font-size: 1.4rem;
+    }
+  }
+}

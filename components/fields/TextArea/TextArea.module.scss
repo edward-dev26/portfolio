@@ -1,0 +1,6 @@
+@import '../../../styles/mixins.scss';
+
+.textarea {
+  @include field;
+  min-height: 150px;
+}

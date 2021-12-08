@@ -1,0 +1,72 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  color: $gray;
+  font-family: Roboto, sans-serif;
+
+  .social {
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+
+    &__link {
+      margin-right: 20px;
+      position: relative;
+
+      &:not(:last-child) {
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          background-color: #03a696;
+          position: absolute;
+          top: 8px;
+          right: -12px;
+        }
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        height: 24px;
+        overflow: hidden;
+        position: relative;
+
+        .linkTitle {
+          position: relative;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          top: 0;
+        }
+
+        .icon {
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: 100%;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &:hover {
+          .linkTitle {
+            top: -100%;
+          }
+
+          .icon {
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,157 @@
+@import './variables.scss';
+
+.project {
+  padding-top: 70px;
+
+  .heading {
+    margin-bottom: 90px;
+
+    h2 {
+      font-size: 44px;
+      font-weight: 600;
+      line-height: normal;
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+
+    .technologies {
+      font-size: 19px;
+      color: $dark-gray;
+      font-family: $roboto-font;
+    }
+  }
+
+  .content {
+    display: flex;
+
+    .gallery {
+      margin-right: 50px;
+      flex: 1;
+    }
+
+    .description {
+      flex: 0 1 30%;
+
+      .overview {
+        margin-bottom: 37px;
+
+        h4 {
+          font-size: 20px;
+          margin: 0;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 17px;
+          line-height: 26px;
+          color: $dark-gray;
+          margin: 0;
+          font-family: $roboto-font;
+        }
+      }
+
+      .info {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-family: $roboto-font;
+
+        li {
+          line-height: 30px;
+        }
+
+        &__key {
+          font-size: 17px;
+        }
+
+        &__value {
+          font-size: 15px;
+          color: $dark-gray;
+        }
+
+        .link {
+          transition: color 0.2s ease-in;
+
+          &:hover {
+            color: $turquoise;
+          }
+        }
+      }
+    }
+  }
+
+  .navigation {
+    padding: 130px 0 120px;
+    text-align: center;
+
+    &__btn {
+      cursor: pointer;
+    }
+
+    &__title {
+      font-size: 38px;
+      line-height: normal;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: $turquoise;
+      }
+    }
+
+    &__next {
+      font-family: $roboto-font;
+      font-size: 15px;
+      font-weight: 500;
+      color: $dark-gray;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .content {
+      .gallery {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .heading {
+      margin-bottom: 30px;
+
+      h2 {
+        font-size: 40px;
+      }
+    }
+
+    .content {
+      flex-direction: column;
+
+      .gallery {
+        margin: 0 0 40px;
+      }
+
+      .description {
+        .overview {
+          margin-bottom: 25px;
+
+          h4 {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .navigation {
+      padding: 70px 0 60px;
+
+      &__title {
+        font-size: 32px;
+        line-height: 42px;
+      }
+
+      &__next {
+        font-size: 12px;
+      }
+    }
+  }
+}

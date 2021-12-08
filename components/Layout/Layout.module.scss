@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  background-color: $dark-bg;
+  color: $white;
+  padding: 0 80px;
+
+  .label {
+    position: fixed;
+    transform: translateY(-45%);
+    left: 100px;
+    top: 45%;
+
+    p {
+      transform: rotate(180deg);
+      line-height: 1;
+      font-size: 15px;
+      color: $dark-white;
+      margin: 0;
+      display: inline-flex;
+      writing-mode: vertical-rl;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - $header-height);
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-height: calc(100vh - $header-height-mobile);
+  }
+}

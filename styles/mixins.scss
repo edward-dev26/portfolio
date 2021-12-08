@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+@mixin field {
+  border: none;
+  border-bottom: 1px solid $field-border;
+  background-color: transparent;
+  font-size: 14px;
+  color: $dark-gray;
+  font-family: $roboto-font;
+  display: block;
+  width: 100%;
+  padding: 0 0 2px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+}
