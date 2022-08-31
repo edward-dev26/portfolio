@@ -15,6 +15,7 @@ type PropsType = {
 };
 
 const Home: NextPage<PropsType> = ({ projects }) => {
+  console.log('test')
   return (
     <div className={styles.home}>
       <Head>
