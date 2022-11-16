@@ -1,7 +1,7 @@
 import styles from '../styles/About.module.scss';
 import { GetStaticProps, NextPage } from 'next';
 import { ISkill } from '../interfaces';
-import profilePhoto from '../public/profile-photo.jpg';
+import profilePhoto from '../public/profile-photo.png';
 import { skills } from '../data/skills';
 import { getTitle } from '../utils/getTitle';
 
@@ -23,18 +23,18 @@ const About: NextPage<PropsType> = ({ skills }) => {
         <title>{getTitle('About')}</title>
       </Head>
       <Title
-        text="Eduard is a professional developer working on modern
-        projects"
-        highlight="professional"
+        text='Eduard is a professional developer working on modern
+        projects'
+        highlight='professional'
       />
       <div className={styles.content}>
         <div className={styles.photo}>
           <div className={styles.image}>
             <Image
               src={profilePhoto}
-              alt="Profile photo"
-              objectFit="fill"
-              objectPosition="center"
+              alt='Profile photo'
+              objectFit='fill'
+              objectPosition='center'
               priority
             />
           </div>
@@ -43,13 +43,15 @@ const About: NextPage<PropsType> = ({ skills }) => {
           <div className={styles.aboutMe}>
             <h3>About me</h3>
             <p>
-              I am a professional Full-Stack JavaScript Engineer. I’ve been
-              working with JavaScript since the end of 2019. My main
-              specialization it’s React library with its infrastructure.I
-              provide such services as Website development from scratch,
-              Finalizations of sites, Templating, Mobile optimization. For more
-              than 2 years I&apos;ve been working on big projects for clients
-              from all over the world.
+              JavaScript Engineer with 3 years of web development experience. Always striving to create a quality
+              product and clean and easily extensible code. Worked on different international projects using the SCRUM
+              methodology. Can create high-performance single-page applications from scratch, following all stages of
+              development such as designing the application&apos;s architecture, unit, and end-to-end test coverage,
+              building, and deployment using one of the modern JavaScript frameworks such as React, VueJS, and Angular.
+            </p>
+            <p>
+              Also, have experience in backend development on the NodeJS platform. Developed RestAPIs using ExpressJS
+              and AWS serverless approach.
             </p>
             <p>
               I prefer a healthy lifestyle like gym workout, jogging, biking and
@@ -70,11 +72,11 @@ const About: NextPage<PropsType> = ({ skills }) => {
           <div className={styles.buttons}>
             <Button>
               <a
-                href="https://docs.google.com/document/d/1swRNz8lS-kTUfPgIa2CXltqnbNBBP4indarUwE9mQn0/edit?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
+                href='https://docs.google.com/document/d/1swRNz8lS-kTUfPgIa2CXltqnbNBBP4indarUwE9mQn0/edit?usp=sharing'
+                target='_blank'
+                rel='noreferrer'
               >
-                View Portfolio
+                View CV
               </a>
             </Button>
           </div>
@@ -88,8 +90,8 @@ const About: NextPage<PropsType> = ({ skills }) => {
 export const getStaticProps: GetStaticProps = () => {
   return {
     props: {
-      skills,
-    },
+      skills
+    }
   };
 };
 
