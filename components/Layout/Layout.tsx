@@ -18,7 +18,7 @@ const Layout: React.FC = ({ children }) => {
       </div>
       {isBigScreen && (
         <div className={styles.label}>
-          <p>Professional Web Developer since 2019</p>
+          <p>Professional Software Engineer since 2019</p>
         </div>
       )}
     </div>

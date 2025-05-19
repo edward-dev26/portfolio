@@ -2,35 +2,39 @@ import { ISkill } from '../interfaces';
 
 export const skills: Array<ISkill> = [
   {
-    title: 'HTML 5',
-    progress: 95
-  },
-  {
-    title: 'CSS 3',
-    progress: 95
-  },
-  {
     title: 'JavaScript',
-    progress: 95
+    progress: 97
+  },
+  {
+    title: 'TypeScript',
+    progress: 96
   },
   {
     title: 'React',
+    progress: 96
+  },
+  {
+    title: 'Next.js',
     progress: 95
   },
   {
-    title: 'VueJS',
+    title: 'NestJS',
+    progress: 95
+  },
+  {
+    title: 'MongoDB',
+    progress: 93
+  },
+  {
+    title: 'PostgreSQL',
+    progress: 92
+  },
+  {
+    title: 'ElasticSearch',
     progress: 90
   },
   {
-    title: 'Angular',
-    progress: 80
-  },
-  {
-    title: 'NodeJS',
-    progress: 80
-  },
-  {
     title: 'AWS',
-    progress: 80
+    progress: 88
   }
 ];

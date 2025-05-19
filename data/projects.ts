@@ -3,57 +3,20 @@ import { PortfolioCategories } from '../interfaces/enums';
 
 export const projects: Array<IProject> = [
   {
-    id: 1,
-    title: 'ListList',
-    technologies: ['NextJS', 'Redux', 'TypeScript', 'SSR'],
-    image: '/listlist.png',
-    types: [PortfolioCategories.React],
+    id: 9,
+    title: 'Hotel Booking Platform',
+    technologies: ['Next.js', 'MongoDB', 'TailwindCSS'],
+    image: '/hotel.png',
+    types: [PortfolioCategories.NextJS],
     links: {
-      demo: 'https://listlist.io/'
+      demo: 'https://a-frame-hotel.vercel.app'
     },
-    description: `ListList allows you to easily create all kinds of lists and share them with your network!`,
-    date: '2020'
-  },
-  {
-    id: 2,
-    title: 'Social Network',
-    technologies: [
-      'React',
-      'Redux',
-      'TypeScript',
-      'Formik',
-      'Ant Design',
-      'Axios',
-      'Reselect'
-    ],
-    image: '/social_network.jpeg',
-    types: [PortfolioCategories.React],
-    links: {
-      repo: 'https://github.com/edward-dev26/social-network',
-      demo: 'https://social-network-ed.herokuapp.com',
-      api: 'https://social-network.samuraijs.com/'
-    },
-    description: `This is my Social Network builded on SamuraiJS API. It is my first big project in my 
-      role as Web developer. While I was developing this project I also studied programming. A lot of 
-      time has passed since then, but I am constantly improving this project. So I want to show you how 
-      it all began.`,
-    date: '2019'
-  },
-  {
-    id: 3,
-    title: 'Chat',
-    technologies: ['NodeJS', 'Websocket', 'SocketIO', 'Express'],
-    image: '/chat.jpeg',
-    types: [PortfolioCategories.NodeJS],
-    links: {
-      repo: 'https://github.com/edward-dev26/chat-app',
-      demo: 'https://shvetsov-chat-app.herokuapp.com'
-    },
-    description: `This is real time web application provides communication for users. User can create
-      new room or he can join existing room by it name. Inside room user can send messages and everyone in
-      that room will receive messages immediately. That feature provided by WebSockets. Also user can share
-      his location to all users in room.`,
-    date: '2021'
+    description: `Developed a modern hotel booking platform with a fully integrated admin dashboard for seamless 
+    management. The website allows users to browse accommodations, check availability, make reservations, and order 
+    additional services or gift cards. Key features include a real-time booking calendar, automated Telegram 
+    notifications, and a customizable admin panel to manage bookings, orders, and site content. Optimized for 
+    SEO and high performance, ensuring a smooth user experience and efficient operations.`,
+    date: '2024'
   },
   {
     id: 4,
@@ -72,14 +35,28 @@ export const projects: Array<IProject> = [
     date: '2020'
   },
   {
+    id: 3,
+    title: 'Chat',
+    technologies: ['NodeJS', 'Websocket', 'SocketIO', 'Express'],
+    image: '/chat.jpeg',
+    types: [PortfolioCategories.NodeJS],
+    links: {
+      repo: 'https://github.com/edward-dev26/chat-app'
+    },
+    description: `This is real time web application provides communication for users. User can create
+      new room or he can join existing room by it name. Inside room user can send messages and everyone in
+      that room will receive messages immediately. That feature provided by WebSockets. Also user can share
+      his location to all users in room.`,
+    date: '2021'
+  },
+  {
     id: 5,
     title: 'Task Manager API',
     technologies: ['NodeJS', 'Express', 'MongoDB', 'Mongoose', 'JWT'],
     image: '/task_manager.jpeg',
     types: [PortfolioCategories.NodeJS],
     links: {
-      repo: 'https://github.com/edward-dev26/task-manager-api',
-      api: 'https://shvetsov-task-manager.herokuapp.com'
+      repo: 'https://github.com/edward-dev26/task-manager-api'
     },
     description: `This is my first backend project on NodeJS. That application allows user to create and
       manage his tasks. That service has great security provided by Json Web Token (JWT) technology. Also
@@ -93,8 +70,7 @@ export const projects: Array<IProject> = [
     image: '/whether.jpeg',
     types: [PortfolioCategories.NodeJS],
     links: {
-      repo: 'https://github.com/edward-dev26/weather',
-      demo: 'https://shvetsov-weather-app.herokuapp.com'
+      repo: 'https://github.com/edward-dev26/weather'
     },
     description: `This is whether application allows users to know the weather in all places in the world. That 
       services uses MapBox service to process searched place and WhetherStack service to get whether forecast for
@@ -116,13 +92,36 @@ export const projects: Array<IProject> = [
     image: '/posts.jpeg',
     types: [PortfolioCategories.NodeJS, PortfolioCategories.Angular],
     links: {
-      repo: 'https://github.com/edward-dev26/mean-course',
-      demo: 'http://mean-app-frontend.s3-website.us-east-2.amazonaws.com'
+      repo: 'https://github.com/edward-dev26/mean-course'
     },
     description: `That application developed on MEAN stack. That service allows users to see great posts. Also
       users can create and manage their own posts. All that functionality protected very reliable security system
       provided by Json Web Token (JWT) technology.`,
     date: '2021'
+  },
+  {
+    id: 2,
+    title: 'Social Network',
+    technologies: [
+      'React',
+      'Redux',
+      'TypeScript',
+      'Formik',
+      'Ant Design',
+      'Axios',
+      'Reselect'
+    ],
+    image: '/social_network.jpeg',
+    types: [PortfolioCategories.React],
+    links: {
+      repo: 'https://github.com/edward-dev26/social-network',
+      api: 'https://social-network.samuraijs.com/'
+    },
+    description: `This is my Social Network builded on SamuraiJS API. It is my first big project in my 
+      role as Web developer. While I was developing this project I also studied programming. A lot of 
+      time has passed since then, but I am constantly improving this project. So I want to show you how 
+      it all began.`,
+    date: '2019'
   },
   {
     id: 8,

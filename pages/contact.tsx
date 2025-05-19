@@ -10,8 +10,8 @@ import Title from '../components/Title/Title';
 
 const Contact: NextPage = () => {
   const email = 'eshvetsov68@gmail.com';
-  const phone = '+38 050 918 3691';
-  const address = 'Kharkiv, Ukraine';
+  const phone = '+48 881 533 716';
+  const address = 'Warsaw, Poland';
 
   return (
     <div className={styles.contact}>
@@ -47,7 +47,7 @@ const Contact: NextPage = () => {
             <h4>Address</h4>
             <p>
               <a
-                href="https://www.google.com/maps/place/Kharkiv,+Kharkiv+Oblast/@49.994507,36.145742,11z/data=!3m1!4b1!4m5!3m4!1s0x4127a09f63ab0f8b:0x2d4c18681aa4be0a!8m2!3d49.9935!4d36.230383"
+                href="https://maps.app.goo.gl/iBXNn4gSEHuyufsH6"
                 target="_blank"
                 rel="noreferrer"
               >

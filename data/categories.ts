@@ -14,6 +14,10 @@ export const categories = [
     type: PortfolioCategories.React,
   },
   {
+    title: 'Next.js',
+    type: PortfolioCategories.NextJS,
+  },
+  {
     title: 'Angular',
     type: PortfolioCategories.Angular,
   },

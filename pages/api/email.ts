@@ -6,6 +6,7 @@ if (process.env.SEND_GRID_API_KEY) {
 }
 
 const MY_EMAIL = process.env.MY_EMAIL;
+const SEND_GRID_EMAIL = process.env.SEND_GRID_EMAIL;
 
 export default async function handler(
   req: NextApiRequest,
@@ -15,31 +16,31 @@ export default async function handler(
     const { email, subject, message, name } = req.body;
 
     try {
-      if (!MY_EMAIL) {
+      if (!MY_EMAIL || !SEND_GRID_EMAIL) {
         return res.status(500).send({
-          message: 'Server error!',
+          message: 'Server error!'
         });
       }
 
       await sgMail.send({
         to: MY_EMAIL,
-        from: MY_EMAIL,
+        from: SEND_GRID_EMAIL,
         subject,
         text: `
         ${message}
               
         From: ${email} ,
         ${name}
-        `,
+        `
       });
 
       res.status(200).send({
-        message: 'Email sent successfully!',
+        message: 'Email sent successfully!'
       });
     } catch (error: any) {
-      console.log(error);
+      console.log(error.response || error);
       res.status(400).send({
-        message: error.message,
+        message: error.message
       });
     }
   } else {

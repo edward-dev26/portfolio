@@ -4,4 +4,5 @@ export enum PortfolioCategories {
   Angular = 'angular',
   NodeJS = 'nodejs',
   PureJS = 'purejs',
+  NextJS = 'nextjs'
 }

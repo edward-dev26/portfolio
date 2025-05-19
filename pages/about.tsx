@@ -23,18 +23,17 @@ const About: NextPage<PropsType> = ({ skills }) => {
         <title>{getTitle('About')}</title>
       </Head>
       <Title
-        text='Eduard is a professional developer working on modern
-        projects'
-        highlight='professional'
+        text="Eduard is a Full Stack Engineer focused on building clean, scalable applications."
+        highlight="Full Stack Engineer"
       />
       <div className={styles.content}>
         <div className={styles.photo}>
           <div className={styles.image}>
             <Image
               src={profilePhoto}
-              alt='Profile photo'
-              objectFit='fill'
-              objectPosition='center'
+              alt="Profile photo"
+              objectFit="fill"
+              objectPosition="center"
               priority
             />
           </div>
@@ -43,27 +42,16 @@ const About: NextPage<PropsType> = ({ skills }) => {
           <div className={styles.aboutMe}>
             <h3>About me</h3>
             <p>
-              JavaScript Engineer with 3 years of web development experience. Always striving to create a quality
-              product and clean and easily extensible code. Worked on different international projects using the SCRUM
-              methodology. Can create high-performance single-page applications from scratch, following all stages of
-              development such as designing the application&apos;s architecture, unit, and end-to-end test coverage,
-              building, and deployment using one of the modern JavaScript frameworks such as React, VueJS, and Angular.
+              Full Stack JavaScript Engineer with 5+ years of experience in building modern web applications.
+              Comfortable working with frontend frameworks like React, Vue.js, and Angular, and backend technologies
+              such as Express.js, NestJS, MongoDB, and PostgreSQL. Recently expanded my backend expertise by
+              transitioning from Node.js to Ruby on Rails on a production project — quickly adapting and continuing to
+              deliver full-stack features.
             </p>
             <p>
-              Also, have experience in backend development on the NodeJS platform. Developed RestAPIs using ExpressJS
-              and AWS serverless approach.
-            </p>
-            <p>
-              I prefer a healthy lifestyle like gym workout, jogging, biking and
-              so on. Also I like reading and self-development practices. I love
-              traveling and I’m going to visit the most beautiful places on our
-              planet.
-            </p>
-            <p>
-              The quality of the work I have done is very important to me, so I
-              provide clean code and a high-quality product. My goal is to
-              provide the best services on the market and make the life of my
-              clients a little easier.
+              Confident in both starting projects from scratch and maintaining existing codebases. Worked in large
+              distributed teams as well as independently on full-stack features and applications. Always striving to
+              create high-quality products with clean, well-structured, and easily extensible code.
             </p>
           </div>
           <div className={styles.skills}>
@@ -72,9 +60,9 @@ const About: NextPage<PropsType> = ({ skills }) => {
           <div className={styles.buttons}>
             <Button>
               <a
-                href='https://docs.google.com/document/d/1swRNz8lS-kTUfPgIa2CXltqnbNBBP4indarUwE9mQn0/edit?usp=sharing'
-                target='_blank'
-                rel='noreferrer'
+                href="https://docs.google.com/document/d/1swRNz8lS-kTUfPgIa2CXltqnbNBBP4indarUwE9mQn0/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
               >
                 View CV
               </a>
